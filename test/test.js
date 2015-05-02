@@ -8,5 +8,8 @@ describe('Cash Register', function(){
       assert.equal(typeof Cash, 'object');
       assert.equal(typeof Cash.getChange, 'function');
     });
+    it('getChange(100,300) should equal [25, 10, 5]', function(){
+      assert.deepEqual(Cash.getChange(100,300), [25, 10, 5]);
+    })
   });
 });
