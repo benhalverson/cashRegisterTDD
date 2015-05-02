@@ -1,9 +1,12 @@
+'use strict';
 var assert = require("assert"); // node.js core module
-var cash = require('../cash.js'); // cash module
-describe('Array', function(){
-  describe('#indexOf()', function(){
-    it('should return -1 when the value is not present', function(){
-      assert.equal(-1, [1,2,3].indexOf(4)); // 4 is not present in this array so indexOf returns -1
-    })
-  })
+var Cash = require('../cash.js'); // cash module
+
+describe('Cash Register', function(){
+  describe('module Cash', function(){
+    it('should have a getChange Method', function(){
+      assert.equal(typeof Cash, 'object');
+      assert.equal(typeof C.getChange, 'function');
+    });
+  });
 });
