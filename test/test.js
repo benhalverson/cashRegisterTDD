@@ -6,7 +6,7 @@ describe('Cash Register', function(){
   describe('module Cash', function(){
     it('should have a getChange Method', function(){
       assert.equal(typeof Cash, 'object');
-      assert.equal(typeof C.getChange, 'function');
+      assert.equal(typeof Cash.getChange, 'function');
     });
   });
 });
